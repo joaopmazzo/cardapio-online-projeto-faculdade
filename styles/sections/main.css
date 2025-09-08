@@ -1,0 +1,48 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  max-width: 900px;
+  padding: 0 1rem;
+  margin: 2rem 0;
+}
+
+main > h1 {
+  font-size: 3.75rem;
+  color: var(--dark-gray-text);
+}
+
+main > h1 > span {
+  color: var(--green-text);
+}
+
+main > p {
+  max-width: 70%;
+
+  font-size: 1.25rem;
+  color: var(--gray-text);
+}
+
+main > button {
+  background-color: var(--green-background);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.125rem;
+  color: white;
+}
+
+main > button:hover {
+  background-color: var(--green-background-hover);
+  transition: background-color 0.2s ease-in-out;
+}

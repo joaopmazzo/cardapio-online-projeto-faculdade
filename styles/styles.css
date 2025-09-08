@@ -2,6 +2,7 @@
 
 /* sections imports */
 @import "sections/header.css";
+@import "sections/main.css";
 
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap");
@@ -16,4 +17,13 @@
   --gray-text: #6b7280;
   --dark-gray-text: #374151;
   --green-text: #00693b;
+
+  --green-background: #00693b;
+  --green-background-hover: #008349;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
