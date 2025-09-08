@@ -1,0 +1,19 @@
+@import "reset.css";
+
+/* sections imports */
+@import "sections/header.css";
+
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --gray-text: #6b7280;
+  --dark-gray-text: #374151;
+  --green-text: #00693b;
+}
