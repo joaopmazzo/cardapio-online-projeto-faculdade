@@ -33,12 +33,12 @@ nav > ul {
 
 nav > ul > li > a {
   text-decoration: none;
-  color: var(--gray-text);
+  color: var(--light-gray-text);
   font-weight: 500;
 }
 
 nav > ul > li > a {
-  color: var(--gray-text);
+  color: var(--light-gray-text);
   text-decoration: none;
   font-weight: 500;
 }

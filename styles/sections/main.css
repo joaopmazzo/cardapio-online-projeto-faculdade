@@ -23,7 +23,7 @@ main > p {
   max-width: 70%;
 
   font-size: 1.25rem;
-  color: var(--gray-text);
+  color: var(--light-gray-text);
 }
 
 main > button {
