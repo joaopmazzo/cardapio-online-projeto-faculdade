@@ -4,6 +4,7 @@
 @import "sections/header.css";
 @import "sections/main.css";
 @import "sections/cardapio.css";
+@import "sections/sobre-nos.css";
 
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap");
@@ -33,4 +34,6 @@ body {
   align-items: center;
 
   line-height: 1.5rem;
+
+  padding: 0 1rem;
 }
