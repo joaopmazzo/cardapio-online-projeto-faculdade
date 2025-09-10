@@ -5,6 +5,7 @@
 @import "sections/main.css";
 @import "sections/cardapio.css";
 @import "sections/sobre-nos.css";
+@import "sections/footer.css";
 
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap");
@@ -17,12 +18,13 @@
 :root {
   --background: #ffffff;
   --light-gray-text: #6b7280;
-  --light-gray-text: #555555;
+  --gray-text: #555555;
   --dark-gray-text: #374151;
   --green-text: #00693b;
 
   --green-background: #00693b;
   --green-background-hover: #008349;
+  --lighter-gray-background: #f9f9f9;
   --light-gray-background: #f5f5f5;
 
   --light-gray-border: #e4e4e4;
@@ -35,5 +37,5 @@ body {
 
   line-height: 1.5rem;
 
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }

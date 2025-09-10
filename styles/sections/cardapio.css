@@ -1,5 +1,12 @@
 .cardapio-section {
-  padding: 4rem 0;
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background-color: var(--lighter-gray-background);
+}
+
+.cardapio-section > * {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cardapio-section > h1 {
@@ -23,7 +30,6 @@
 
 .cardapio-container {
   width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
