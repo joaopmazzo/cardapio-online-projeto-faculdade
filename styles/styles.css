@@ -3,7 +3,7 @@
 /* sections imports */
 @import "sections/header.css";
 @import "sections/main.css";
-@import "sections/menu.css";
+@import "sections/cardapio.css";
 
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap");
