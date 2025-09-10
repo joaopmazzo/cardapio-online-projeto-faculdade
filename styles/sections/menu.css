@@ -45,6 +45,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.cardapio-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
 .cardapio-card__header {
   display: contents;
 }
