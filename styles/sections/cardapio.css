@@ -1,7 +1,11 @@
 .cardapio-section {
   width: 100%;
   padding: 4rem 1.5rem;
-  background-color: var(--lighter-gray-background);
+  background-color: color-mix(
+    in hsl,
+    var(--light-gray-background) 30%,
+    transparent
+  );
 }
 
 .cardapio-section > * {
@@ -12,6 +16,8 @@
 .cardapio-section > h1 {
   text-align: center;
   color: var(--dark-gray-text);
+
+  margin-bottom: 2.875rem;
 }
 
 .cardapio-section > hr {

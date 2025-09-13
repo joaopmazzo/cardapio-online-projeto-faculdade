@@ -19,6 +19,8 @@
 .sobre-nos-section__title {
   text-align: center;
   color: var(--dark-gray-text);
+
+  margin-bottom: 2.875rem;
 }
 
 .sobre-nos-description-container {
