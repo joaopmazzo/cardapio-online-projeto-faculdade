@@ -68,3 +68,23 @@
   font-size: 0.875rem;
   color: var(--light-gray-text);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre-nos-section__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sobre-nos-section__title {
+    margin-bottom: 2rem;
+  }
+
+  .sobre-nos-info-container {
+    max-width: 100%;
+  }
+
+  .sobre-nos-info-card {
+    padding: 1rem;
+  }
+}

@@ -129,3 +129,37 @@
   margin: 0;
   text-align: center;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .entre-em-contato-section {
+    align-items: stretch;
+  }
+
+  .entre-em-contato-section__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .entre-em-contato-section__title {
+    margin-bottom: 2rem;
+  }
+
+  .entre-em-contato-description-container {
+    text-align: left;
+  }
+
+  .entre-em-contato-section__fale-conosco {
+    justify-content: flex-start;
+  }
+
+  .entre-em-contato-form-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
