@@ -98,14 +98,14 @@
   margin-top: 1.5rem;
 
   font-size: 0.875rem;
-  color: var(--light-gray-text);
+  color: var(--dark-gray-text);
 }
 
 .cardapio-card__footer {
   grid-area: time;
 
   font-size: 0.75rem;
-  color: var(--light-gray-text);
+  color: var(--dark-gray-text);
 
   display: flex;
   align-items: center;
