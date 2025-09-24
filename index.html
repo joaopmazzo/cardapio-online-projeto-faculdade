@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -26,7 +26,7 @@
       name="description"
       content="Sabor & Arte - Restaurante gourmet em São Paulo. Cardápio especial com pratos principais, bebidas artesanais e sobremesas únicas. Ingredientes frescos, chef formado na França. Reserve já!"
     />
-    <title>Sabor & Arte</title>
+    <title>Sabor & Arte | Restaurante Gourmet em São Paulo</title>
 
     <link
       rel="stylesheet"
@@ -34,36 +34,65 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo">
+    <header role="banner">
+      <div
+        class="logo"
+        aria-label="Logo Sabor & Arte"
+      >
         <img
           src="icons/chef-icon-24px.png"
-          alt="Imagem de um chapéu de chef de cozinha"
+          alt=""
+          aria-hidden="true"
         />
         <h1>Sabor & Arte</h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Cardápio</a></li>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">Contato</a></li>
+      <nav
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <ul role="list">
+          <li role="listitem">
+            <a
+              href="#"
+              aria-current="page"
+              >Início</a
+            >
+          </li>
+          <li role="listitem"><a href="#cardapio">Cardápio</a></li>
+          <li role="listitem"><a href="#sobre-nos">Sobre Nós</a></li>
+          <li role="listitem"><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main role="main">
       <h1>Bem-vindos ao <span>Sabor & Arte</span></h1>
       <p>
         Descubra uma experiência gastronômica única, onde cada prato é preparado
         com ingredientes frescos e muito carinho. Nosso cardápio foi pensado
         para agradar todos os paladares.
       </p>
-      <button type="button">Ver Cardápio</button>
+      <button
+        type="button"
+        aria-label="Ver nosso cardápio"
+        onclick="document.querySelector('#cardapio').scrollIntoView()"
+      >
+        Ver Cardápio
+      </button>
     </main>
 
-    <section class="cardapio-section">
-      <h1 class="cardapio-section__title">Nosso Cardápio</h1>
+    <section
+      id="cardapio"
+      class="cardapio-section"
+      role="region"
+      aria-labelledby="cardapio-title"
+    >
+      <h1
+        id="cardapio-title"
+        class="cardapio-section__title"
+      >
+        Nosso Cardápio
+      </h1>
 
       <section>
         <div class="cardapio-subsection__title">
@@ -226,8 +255,18 @@
       </section>
     </section>
 
-    <section class="sobre-nos-section">
-      <h1 class="sobre-nos-section__title">Sobre Nós</h1>
+    <section
+      id="sobre-nos"
+      class="sobre-nos-section"
+      role="region"
+      aria-labelledby="sobre-nos-title"
+    >
+      <h1
+        id="sobre-nos-title"
+        class="sobre-nos-section__title"
+      >
+        Sobre Nós
+      </h1>
 
       <div class="sobre-nos-section__container">
         <div class="sobre-nos-description-container">
@@ -299,12 +338,27 @@
       </div>
     </section>
 
-    <section class="entre-em-contato-section">
-      <h1 class="entre-em-contato-section__title">Entre em Contato</h1>
+    <section
+      id="contato"
+      class="entre-em-contato-section"
+      role="region"
+      aria-labelledby="contato-title"
+    >
+      <h1
+        id="contato-title"
+        class="entre-em-contato-section__title"
+      >
+        Entre em Contato
+      </h1>
 
       <div class="entre-em-contato-section__container">
         <div class="entre-em-contato-description-container">
-          <h2 class="entre-em-contato-section__subtitle">Fale Conosco</h2>
+          <h2
+            id="fale-conosco-title"
+            class="entre-em-contato-section__subtitle"
+          >
+            Fale Conosco
+          </h2>
           <div class="entre-em-contato-section__fale-conosco">
             <img
               src="icons/telefone-icon-32px-verde.png"
@@ -339,7 +393,11 @@
         </div>
 
         <div class="entre-em-contato-form-container">
-          <form class="entre-em-contato-form">
+          <form
+            class="entre-em-contato-form"
+            role="form"
+            aria-labelledby="contato-title"
+          >
             <div class="form-field">
               <label for="nome">Nome Completo *</label>
               <input
@@ -347,6 +405,9 @@
                 id="nome"
                 name="nome"
                 required
+                aria-required="true"
+                aria-label="Digite aqui seu nome completo"
+                placeholder="José da Silva"
               />
             </div>
 
@@ -357,50 +418,62 @@
                 id="email"
                 name="email"
                 required
+                aria-required="true"
+                aria-label="Digite aqui seu endereço de e-mail"
+                placeholder="exemplo@email.com.br"
               />
             </div>
 
             <div class="form-field">
-              <label for="telefone">Telefone</label>
+              <label for="telefone">Telefone (opcional)</label>
               <input
                 type="tel"
                 id="telefone"
                 name="telefone"
                 placeholder="(11) 99999-9999"
+                aria-label="Digite aqui seu número de telefone com DDD"
               />
             </div>
 
             <div class="form-field">
-              <label for="mensagem">Mensagem *</label>
+              <label for="mensagem">Sua Mensagem *</label>
               <textarea
                 id="mensagem"
                 name="mensagem"
                 rows="4"
-                placeholder="Conte-nos como podemos ajudá-lo..."
+                placeholder="Escreva aqui sua mensagem. Por exemplo: gostaria de fazer uma reserva para 4 pessoas..."
                 required
+                aria-required="true"
+                aria-label="Escreva aqui sua mensagem"
               ></textarea>
             </div>
 
             <button
               type="submit"
               class="submit-button"
+              aria-label="Clique aqui para enviar sua mensagem"
             >
               Enviar Mensagem
             </button>
 
             <p class="form-disclaimer">
-              * Campos obrigatórios. Responderemos em até 24 horas.
+              * Campos obrigatórios. Você receberá nossa resposta em até 24
+              horas úteis.
             </p>
           </form>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="logo">
+    <footer role="contentinfo">
+      <div
+        class="logo"
+        aria-label="Logo Sabor & Arte"
+      >
         <img
           src="icons/chef-icon-24px.png"
           alt="Imagem de um chapéu de chef de cozinha"
+          aria-hidden="true"
           width="20"
         />
         <h1>Sabor & Arte</h1>
