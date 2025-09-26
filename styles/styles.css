@@ -7,6 +7,7 @@
 @import "sections/sobre-nos.css";
 @import "sections/entre-em-contato.css";
 @import "sections/footer.css";
+@import "sections/modal.css";
 
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
