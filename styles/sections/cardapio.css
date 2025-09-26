@@ -21,7 +21,7 @@
 }
 
 .cardapio-section > hr {
-  margin: 3rem 0 1.75rem 0;
+  margin: 3rem auto 1.75rem auto;
   border: none;
   border-top: 1px solid var(--light-gray-border);
 }
